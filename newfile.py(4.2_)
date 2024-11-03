@@ -1,0 +1,14 @@
+def cocokkan_produk(kode1, kode2, kode3):
+    
+    last_digit1 = kode1 % 10
+    last_digit2 = kode2 % 10
+    last_digit3 = kode3 % 10
+    
+
+    return (last_digit1 == last_digit2) or (last_digit1 == last_digit3) or (last_digit2 == last_digit3)
+
+# testing
+print(cocokkan_produk(900, 10, 38))   #True
+print(cocokkan_produk(276, 6, 75))    #True
+print(cocokkan_produk(63, 391, 108))  #False
+print(cocokkan_produk(654, 24, 74))   #True

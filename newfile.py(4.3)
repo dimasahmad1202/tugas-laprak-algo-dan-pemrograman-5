@@ -1,0 +1,9 @@
+#Celsius ke Fahrenheit
+celsius_ke_fahrenheit = lambda c: (c * 9/5) + 32
+
+#Fahrenheit ke Celsius
+fahrenheit_ke_celsius = lambda f: (f - 32) * 5/9
+
+#testing
+print(celsius_ke_fahrenheit(19))
+print(fahrenheit_ke_celsius(70+7))
